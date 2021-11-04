@@ -1,6 +1,6 @@
 {
-  "name": "procal",
-  "private": true,
+  "name": "next-app-bp",
+  "description": "A NextJS boilerplate with ESLint, Prettier, and Husky pre-configured",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -37,5 +37,21 @@
   "lint-staged": {
     "*.{js,ts,tsx}": "eslint --cache --fix",
     "*.{js,ts,tsx,css,md}": "prettier --write"
-  }
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princejoogie/node-app-bp.git"
+  },
+  "keywords": [
+    "nextjs",
+    "nodejs",
+    "react",
+    "boilerplate",
+    "eslint",
+    "prettier",
+    "husky"
+  ],
+  "author": "Prince Carlo Juguilon",
+  "license": "MIT"
 }
