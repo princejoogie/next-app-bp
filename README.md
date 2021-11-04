@@ -1,19 +1,5 @@
-# Procal
-
-- a profit calculator for crypto exchange
-
-### Todo
-
-- [ ] Balance Input
-- [ ] Remaining Balance
-- [ ] Transaction Item
-  - [ ] Coin
-  - [ ] Amount
-  - [ ] USD Value (per coin)
-  - [ ] Profit Gain (%)
-  - [ ] USD Gain
-- [ ] Total Profit (%)
-- [ ] Total Gain (USD)
+# NextJS Boilerplate
+- A NextJS boilerplate with ESLint, Prettier, and Husky pre-configured
 
 ### References
 
