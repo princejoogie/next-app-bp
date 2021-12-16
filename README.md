@@ -1,4 +1,5 @@
 # NextJS Boilerplate
+
 - A NextJS boilerplate with ESLint, Prettier, and Husky pre-configured
 
 ### References

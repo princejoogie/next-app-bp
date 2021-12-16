@@ -27,6 +27,8 @@ module.exports = {
     "no-await-in-loop": "off",
     "import/prefer-default-export": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": "off",
+    "react/prop-types": "off",
     "react/jsx-filename-extension": [
       2,
       {
