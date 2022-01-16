@@ -11,10 +11,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <body className="text-white bg-neutral-900">
-          <Main />
-          <NextScript />
-        </body>
+        <Main />
+        <NextScript />
       </Html>
     );
   }
