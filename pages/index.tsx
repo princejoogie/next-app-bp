@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
-
-type Theme = "light" | "dark";
+import { useTheme } from "next-themes";
 
 const Home: NextPage = () => {
-  const [theme, setTheme] = useState<Theme>("light");
+  const { theme, setTheme } = useTheme();
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
@@ -18,16 +17,12 @@ const Home: NextPage = () => {
         description="A NextJS boilerplate with ESLint, Prettier, and Husky pre-configured"
       />
 
-      <div
-        className={`flex flex-col items-center justify-center transition-colors duration-300 w-full h-screen ${
-          theme === "light" ? "text-black bg-white" : "text-white bg-black"
-        }`}
-      >
+      <div className="flex flex-col items-center justify-center w-full h-screen text-black transition-colors duration-300 bg-white dark:text-white dark:bg-black">
         <h1 className="text-2xl font-semibold">NextJS Boilerplate</h1>
 
         <div className="flex mt-4 space-x-4">
           <button type="button" onClick={toggleTheme}>
-            {theme === "light" ? <SunIcon /> : <MoonIcon />}
+            {theme === "light" ? <MoonIcon /> : <SunIcon />}
           </button>
 
           <a href="https://github.com/princejoogie/next-app-bp/" target="_blank" rel="noreferrer">
