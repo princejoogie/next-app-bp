@@ -17,10 +17,10 @@ const Home: NextPage = () => {
         description="A NextJS boilerplate with ESLint, Prettier, and Husky pre-configured"
       />
 
-      <div className="flex flex-col items-center justify-center w-full h-screen text-black transition-colors duration-300 bg-white dark:text-white dark:bg-black">
+      <div className="flex h-screen w-full flex-col items-center justify-center bg-white text-black transition-colors duration-300 dark:bg-black dark:text-white">
         <h1 className="text-2xl font-semibold">NextJS Boilerplate</h1>
 
-        <div className="flex mt-4 space-x-4">
+        <div className="mt-4 flex space-x-4">
           <button type="button" onClick={toggleTheme}>
             {theme === "light" ? <MoonIcon /> : <SunIcon />}
           </button>
@@ -41,7 +41,7 @@ interface IconProps {
 const GithubIcon = ({ className }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={`w-6 h-6 hover:opacity-70 transition-opacity duration-300 ${className}`}
+    className={`h-6 w-6 transition-opacity duration-300 hover:opacity-70 ${className}`}
     viewBox="0 0 256 250"
     fill="currentColor"
     preserveAspectRatio="xMidYMid"
@@ -53,7 +53,7 @@ const GithubIcon = ({ className }: IconProps) => (
 const SunIcon = ({ className }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={`w-6 h-6 hover:opacity-70 transition-opacity duration-300 ${className}`}
+    className={`h-6 w-6 transition-opacity duration-300 hover:opacity-70 ${className}`}
     viewBox="0 0 20 20"
     fill="currentColor"
   >
@@ -68,7 +68,7 @@ const SunIcon = ({ className }: IconProps) => (
 const MoonIcon = ({ className }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={`w-6 h-6 hover:opacity-70 transition-opacity duration-300 ${className}`}
+    className={`h-6 w-6 transition-opacity duration-300 hover:opacity-70 ${className}`}
     viewBox="0 0 20 20"
     fill="currentColor"
   >
