@@ -69,11 +69,17 @@
         "*.test.js",
         "*.test.jsx",
         "*.test.ts",
-        "*.test.tsx"
+        "*.test.tsx",
+        "*.spec.js",
+        "*.spec.jsx",
+        "*.spec.ts",
+        "*.spec.tsx"
       ],
       "rules": {
         "no-undef": "off",
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "import/extensions": "off",
+        "no-unused-expressions": "off"
       }
     }
   ]

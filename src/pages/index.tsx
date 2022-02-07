@@ -11,7 +11,9 @@ const Home: NextPage = () => {
       />
 
       <div className="flex h-screen w-full flex-col items-center justify-center bg-white text-black transition-colors duration-300">
-        <h1 className="text-2xl font-semibold">NextJS Boilerplate</h1>
+        <h1 data-cy="heading-text" className="text-2xl font-semibold">
+          NextJS Boilerplate
+        </h1>
 
         <div className="mt-4 flex space-x-4">
           <a href="https://github.com/princejoogie/next-app-bp/" target="_blank" rel="noreferrer">
