@@ -9,7 +9,7 @@
     "prepare": "husky install",
     "start": "next start",
     "test": "npm run test:unit && npm run test:e2e",
-    "test:unit": "jest ./__tests__",
+    "test:unit": "jest ./__tests__/unit",
     "test:e2e": "cypress run"
   },
   "dependencies": {
