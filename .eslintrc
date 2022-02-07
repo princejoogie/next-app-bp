@@ -44,7 +44,11 @@
           ".js",
           ".jsx",
           ".ts",
-          ".tsx"
+          ".tsx",
+          ".test.js",
+          ".test.jsx",
+          ".test.ts",
+          ".test.tsx"
         ]
       }
     ],
@@ -58,5 +62,19 @@
         "tsx": "never"
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.test.js",
+        "*.test.jsx",
+        "*.test.ts",
+        "*.test.tsx"
+      ],
+      "rules": {
+        "no-undef": "off",
+        "react/react-in-jsx-scope": "off"
+      }
+    }
+  ]
 }
