@@ -18,7 +18,8 @@
   },
   "plugins": [
     "react",
-    "@typescript-eslint"
+    "@typescript-eslint",
+		"prettier"
   ],
   "settings": {
     "import/resolver": {
@@ -28,6 +29,7 @@
     }
   },
   "rules": {
+		"prettier/prettier": "error",
     "arrow-body-style": "off",
     "no-use-before-define": "off",
     "no-plusplus": "off",
