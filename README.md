@@ -8,11 +8,11 @@ A NextJS boilerplate with all essentials included.
 | Name        | Version |
 | :---------- | :------ |
 | ✅ Tailwind | v3.0.18 |
-| ✅ Eslint   | v8.8.0  |
+| ✅ Eslint   | v8.11.0 |
 | ✅ Prettier | v2.5.1  |
 | ✅ Husky    | v7.0.4  |
-| ✅ Jest     | v27.5.0 |
-| ✅ Cypress  | v9.4.1  |
+| ✅ Jest     | v27.5.1 |
+| ✅ Cypress  | v9.5.2  |
 
 ## Installation
 
