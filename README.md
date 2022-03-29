@@ -64,16 +64,15 @@ make start-production
 make stop-production
 ```
 
-### Test
+### Testing
 
 ```bash
-yarn test # or npm run test
-```
-
-### Build
-
-```bash
-yarn build # or npm run build
+# to run both unit and e2e tests:
+yarn test
+# to run only unit tests:
+yarn test:unit
+# to run only e2e tests:
+yarn test:e2e
 ```
 
 ---
