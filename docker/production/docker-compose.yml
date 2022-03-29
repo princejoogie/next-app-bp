@@ -4,7 +4,7 @@ services:
   next-app-bp-production:
     build:
       context: ../../
-      dockerfile: docker/development/Dockerfile
+      dockerfile: docker/production/Dockerfile
     image: next-app-bp-production
     ports:
       - '3002:3000'

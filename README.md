@@ -25,10 +25,16 @@ git init .
 
 ## Usage
 
-### Development
+### Local Development
 
 ```bash
-yarn dev # or npm run dev
+# Install dependencies
+yarn install
+# Start development server
+yarn dev
+# Build for prod
+yarn build
+
 ```
 
 ### Test
