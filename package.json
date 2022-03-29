@@ -15,10 +15,10 @@
     "test:e2e": "start-server-and-test dev 3000 cypress:run"
   },
   "dependencies": {
-    "next": "12.1.2",
+    "next": "^12.1.2",
     "next-seo": "^5.3.0",
-    "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react": "^18.0.0-rc.3",
+    "react-dom": "^18.0.0-rc.3"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.3",
