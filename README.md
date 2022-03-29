@@ -8,11 +8,11 @@ A NextJS boilerplate with all essentials included.
 | Name        | Version |
 | :---------- | :------ |
 | ✅ Tailwind | v3.0.18 |
-| ✅ Eslint   | v8.11.0 |
-| ✅ Prettier | v2.5.1  |
+| ✅ Eslint   | v8.12.0 |
+| ✅ Prettier | v2.6.1  |
 | ✅ Husky    | v7.0.4  |
 | ✅ Jest     | v27.5.1 |
-| ✅ Cypress  | v9.5.2  |
+| ✅ Cypress  | v9.5.3  |
 
 ## Installation
 
@@ -34,7 +34,34 @@ yarn install
 yarn dev
 # Build for prod
 yarn build
+```
 
+### With Docker
+
+Docker files can be updated in `/docker/<development|production>/Dockerfile`
+
+> make sure to include `.env.development` and `.env.development` to your `.gitignore` file
+
+#### Development Environment
+
+```bash
+# build
+make build-development
+# start
+make start-development
+# stop
+make stop-development
+```
+
+#### Production Environment
+
+```bash
+# build
+make build-production
+# start
+make start-production
+# stop
+make stop-production
 ```
 
 ### Test

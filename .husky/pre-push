@@ -1,5 +1,14 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run test
+# to run both unit and e2e tests, run:
+# npm run test
 
+# to run only unit tests, run:
+# npm run test:unit
+
+# to run only e2e tests, run:
+# npm run test:e2e
+
+# default only run unit tests
+npm run test:unit
