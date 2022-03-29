@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  next-app-bp-development:
+    build:
+      context: ../../
+      dockerfile: docker/development/Dockerfile
+    image: next-app-bp-development
+    ports:
+      - '3001:3000'
