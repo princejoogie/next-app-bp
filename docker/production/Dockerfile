@@ -14,7 +14,7 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 # This will do the trick, use the corresponding env file for each environment.
-COPY .env.development .env.production
+COPY .env.production .env.production
 RUN yarn build
 
 # 3. Production image, copy all the files and run next
@@ -26,16 +26,10 @@ ENV NODE_ENV=production
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001
 
-# You only need to copy next.config.js if you are NOT using the default configuration
-# COPY --from=builder /app/next.config.js ./
+COPY --from=builder /app/next.config.js ./
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/package.json ./package.json
-
-# Automatically leverage output traces to reduce image size 
-# https://nextjs.org/docs/advanced-features/output-file-tracing
-
-# Uncomment the following line to enable standalong for hosting in cdn
-# COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
@@ -44,6 +38,4 @@ EXPOSE 3000
 
 ENV PORT 3000
 
-# Uncomment the following line to enable standalong for hosting in cdn
-# CMD ["node", "server.js"]
-CMD ["yarn", "start"]
+CMD ["node", "server.js"]
